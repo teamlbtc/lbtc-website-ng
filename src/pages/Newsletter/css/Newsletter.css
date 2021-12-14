@@ -1,0 +1,27 @@
+.sectiondiv {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.colorwithstyle {
+  width: 100%;
+  background-color: #4682b4;
+  height: 90px;
+}
+
+@media (max-width: 574px) {
+  .xview {
+    font-size: large;
+    width: 100%;
+    margin-top: 18px;
+  }
+  .mobx {
+    display: block;
+  }
+  .sectiondiv {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
