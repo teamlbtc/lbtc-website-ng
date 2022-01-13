@@ -23,4 +23,10 @@ export const NewsItems = [
     newlink:
       "https://drive.google.com/file/d/1x_8tRfiyyXhZL4aVa34uMn2prY9OohAl/view?usp=sharing",
   },
+  {
+    month: "December",
+    year: "2021",
+    newlink:
+      "https://drive.google.com/file/d/1cEeiCJX_TaFpLLrVsQvqVw5--b4vQ5aY/view?usp=sharing",
+  },
 ];
