@@ -22,7 +22,7 @@ const HeroMain = () => {
                       Let's Be The Change <br />{" "}
                       <strong>
                         One Mission <br />
-                        Clean Bengaluru
+                        Clean India
                       </strong>
                     </h2>
                     <p itemprop="description">

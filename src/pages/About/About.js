@@ -39,8 +39,8 @@ const About = () => {
                       <p itemprop="description">
                         <strong>Let's Be The Change</strong> (#TeamLBTC) is a
                         non-profit organization which aims to build a cleaner,
-                        healthier and more sustainable society by working with
-                        the people and the Government.
+                        healthier and more sustainable society by working in
+                        synergy with the citizens and the Government.
                         <br /> <br /> LBTC provides it's volunteers a platform
                         filled with zest to contribute more to the society along
                         with a sense of accomplishment and satisfaction.
@@ -50,16 +50,17 @@ const About = () => {
 
                       <p className="thm-clr blc-wt">
                         “ To be an organization of excellence in restoring and
-                        sustaining cleanliness of the city, dedication, and
-                        teamwork towards achieving a garbage-free environment”
+                        sustaining cleanliness of the city with dedication,
+                        teamwork and zeal to achieve a garbage-free environment.
+                        ”
                       </p>
                       <br />
                       <h2 itemprop="headline">Our Mission </h2>
 
                       <p className="thm-clr blc-wt">
-                        “ To establish cleanliness and solve issues by
-                        motivating citizens to take up initiatives and work in
-                        synergy with the government”
+                        “ To achieve <b>#CleanIndia</b> mission by working in
+                        synergy with citizens and the local governing body to
+                        overcome waste management issues. ”
                       </p>
                       <br />
                       <h2 itemprop="headline">Our Achievements </h2>
@@ -76,11 +77,11 @@ const About = () => {
                             <a href="https://www.guinnessworldrecords.com/world-records/541225-most-plastic-bottles-collected-for-recycling-in-12-hours">
                               Guinness World Record{" "}
                             </a>
-                            for collecting 33.5 Tonnes of plastic bottles in 12
-                            hours (2018)
+                            for collecting <b>33.5 Tonnes</b> of plastic bottles
+                            in 12 hours (2018)
                           </li>
                           <li>
-                            Featured as one of the “Young Achiever” in{" "}
+                            Featured as one of the <b>“Young Achiever”</b> in{" "}
                             <a
                               href="https://www.zee5.com/tvshows/details/weekend-with-ramesh-s4-finale-july-14-2019/0-6-1675/weekend-with-ramesh-s4-finale-july-14-2019/0-1-240658"
                               target="_blank"
