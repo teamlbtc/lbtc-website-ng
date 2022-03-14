@@ -34,9 +34,9 @@ const AboutUs = () => {
                     which aims to build a cleaner, healthier and more
                     sustainable society by working in synergy with the citizens
                     and the Government.
-                    <br /> <br /> LBTC provides it's volunteers a platform
+                    {/* <br /> <br /> LBTC provides it's volunteers a platform
                     filled with zest to contribute more to the society along
-                    with a sense of accomplishment and satisfaction.
+                    with a sense of accomplishment and satisfaction. */}
                   </p>
                   <br />
 
