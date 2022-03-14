@@ -1,23 +1,23 @@
 export const ProjectItems = [
   {
-    image: require("./Fundraising/X10X.png").default,
+    image: require("./Fundraising/111.jpg").default,
     dlink: "https://rzp.io/l/lbtc",
-    widthbar: "progress-bar thm-bg wdth10",
-    value: "09%",
-    heading: "Let's Be The Change 3 Year Plan",
+    widthbar: "progress-bar thm-bg wdth80",
+    value: "80%",
+    heading: "Namma Swachha Koramangala",
   },
   {
-    image: require("./Fundraising/1X.png").default,
+    image: require("./Fundraising/11.png").default,
     dlink: "https://rzp.io/l/cleanathon",
-    widthbar: "progress-bar thm-bg wdth40",
-    value: "40%",
-    heading: "Help us Beautify Bengaluru",
+    widthbar: "progress-bar thm-bg wdth90",
+    value: "95%",
+    heading: "Covid-19 Relief Project",
   },
   {
     image: require("./Fundraising/2X.png").default,
     dlink: "https://rzp.io/l/BVProject",
-    widthbar: "progress-bar thm-bg wdth40",
-    value: "34.5%",
+    widthbar: "progress-bar thm-bg wdth70",
+    value: "75%",
     heading: "Bengaluru Veeraru Project 2020-21",
   },
   {
