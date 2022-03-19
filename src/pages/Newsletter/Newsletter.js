@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import { NewsItems } from "../../data/Newsletter/NewsletterData";
+import { Card, Dropdown, Button } from "react-bootstrap";
 import "./css/Newsletter.css";
 
 const Newsletter = () => {
+  const [yearSelect, setYearSelect] = useState("2022");
   return (
     <div>
       <PageHeader></PageHeader>
@@ -25,46 +27,59 @@ const Newsletter = () => {
       <section>
         <div>
           <h1 style={{ textAlign: "center" }}>Our NewsLetter</h1>
-          <div>
-            {NewsItems.map((main) => (
-              <div className="sectiondiv">
-                <div className="colorwithstyle">
-                  <a
-                    className="mobx"
-                    href={main.newlink}
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                    itemprop="url"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h1
-                      className="xview"
-                      style={{
-                        paddingLeft: "2rem",
-                        color: "white",
-                        paddingTop: "1rem",
+          <div className="sectiondiv">
+            <Card>
+              <Card.Header>
+                <Dropdown>
+                  <Dropdown.Toggle id="dropdown-basic">
+                    {yearSelect}
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      onClick={() => {
+                        setYearSelect("2021");
                       }}
                     >
-                      {main.month}
-                    </h1>
-                    <h1
-                      className="xview"
-                      style={{
-                        paddingRight: "2rem",
-                        color: "white",
-                        paddingTop: "1rem",
+                      2021
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      onClick={() => {
+                        setYearSelect("2022");
                       }}
                     >
-                      {main.year}
-                    </h1>
-                  </a>
-                </div>
-              </div>
-            ))}
+                      2022
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Card.Header>
+              <Card.Body>
+                {NewsItems.map((main) =>
+                  main.year === yearSelect ? (
+                    <Card border="primary" style={{ margin: "1rem" }}>
+                      <Card.Body>
+                        <Card.Title>
+                          <h1>{main.year}</h1>
+                        </Card.Title>
+                        <Card.Text>
+                          <h3>{main.month}</h3>
+                        </Card.Text>
+                        <Button
+                          variant="primary"
+                          href={main.newlink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Check it Out!
+                        </Button>
+                      </Card.Body>
+                    </Card>
+                  ) : (
+                    ""
+                  )
+                )}
+              </Card.Body>
+            </Card>
           </div>
         </div>
       </section>
