@@ -44,41 +44,6 @@ const SignUpForm = () => {
     return final;
   }
 
-  useEffect(() => {
-    const docRef = firestore.collection("FormValue").doc("Contact");
-
-    docRef
-      .get()
-      .then((doc) => {
-        if (doc.exists) {
-          let data = doc.data();
-          let val = data.id;
-          console.log("Document data:", val);
-          setidx(val);
-          setNewValue(val);
-        } else {
-          // doc.data() will be undefined in this case
-
-          console.log("No such document!");
-        }
-      })
-      .catch(function (error) {
-        console.log("Error getting document:", error);
-      });
-  });
-
-  function setNewValue(newval) {
-    newval = newval + 1;
-    firestore
-      .collection("FormValue")
-      .doc("Contact")
-      .update({
-        id: newval,
-      })
-      .then(() => {
-        console.log("updated!");
-      });
-  }
 
   const handleSubmit = async (event) => {
     var MainTime = getTime();
@@ -96,7 +61,6 @@ const SignUpForm = () => {
         Message: Message,
         curTime: MainTime,
         curDate: date,
-        formid: idx,
         timestamp: Date.now(),
       })
       .then(() => {
