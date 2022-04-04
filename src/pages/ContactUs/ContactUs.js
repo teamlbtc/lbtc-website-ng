@@ -28,6 +28,7 @@ const ContactUs = () => {
         Email: Email,
         Subject: Subject,
         Message: Message,
+        Timestamp: Date.now(),
       })
       .then(() => {
         toast.success("Thank You! We'll Get Back To You Soon", {
