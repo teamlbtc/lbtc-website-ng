@@ -18,7 +18,35 @@ const ContactUs = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  function getTime() {
+    var d = new Date();
+    var hr = d.getHours();
+    var min = d.getMinutes();
+    if (min < 10) {
+      min = "0" + min;
+    }
+    var ampm = "am";
+    if (hr > 12) {
+      hr -= 12;
+      ampm = "pm";
+    }
+    var final = hr + ":" + min + " " + ampm;
+    return final;
+  }
+
+  function getDate() {
+    var d = new Date();
+    var date = d.getDate();
+    var month = d.getMonth() + 1;
+    var year = d.getFullYear();
+    var final = date + "/" + month + "/" + year;
+    return final;
+  }
+
   const handleSubmit = async (event) => {
+    var MainTime = getTime();
+    var date = getDate();
+
     event.preventDefault();
     await firestore
       .collection("ContactUs")
@@ -29,6 +57,8 @@ const ContactUs = () => {
         Subject: Subject,
         Message: Message,
         Timestamp: Date.now(),
+        curTime: MainTime,
+        curDate: date,
       })
       .then(() => {
         toast.success("Thank You! We'll Get Back To You Soon", {

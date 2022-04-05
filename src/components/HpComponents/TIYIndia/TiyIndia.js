@@ -16,7 +16,7 @@ export const TiyIndia = () => {
               <div className="col-md-6 col-sm-12 col-lg-6">
                 <div className="abt-img">
                   <img
-                    src={require("./MainImg.png").default}
+                    src={require("./MainImg1.png").default}
                     alt="orgn-mckp1.png"
                     itemprop="image"
                   />

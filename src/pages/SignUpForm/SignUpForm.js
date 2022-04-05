@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PageHeader from "../../components/PageHeader/PageHeader";
@@ -13,7 +13,6 @@ const SignUpForm = () => {
   const [Email, setEmail] = useState("");
   const [Subject, setSubject] = useState("");
   const [Message, setMessage] = useState("");
-  const [idx, setidx] = useState(0);
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -43,7 +42,6 @@ const SignUpForm = () => {
     var final = date + "/" + month + "/" + year;
     return final;
   }
-
 
   const handleSubmit = async (event) => {
     var MainTime = getTime();
