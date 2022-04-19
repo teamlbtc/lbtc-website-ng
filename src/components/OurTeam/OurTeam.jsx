@@ -55,7 +55,7 @@ function OurTeam() {
     },
     {
       name: "Teja Jangam",
-      designation: "Jr Associate, Operations",
+      designation: "Operations Lead",
       facebooklink: "https://www.instagram.com/_tejaraj_/?r=nametag",
       linkedinlink: "https://www.linkedin.com/in/teja-jangam-0a35331ba",
       //twitterlink: "mailto:karthik@letsbethechange.in",
@@ -63,7 +63,7 @@ function OurTeam() {
     },
     {
       name: "Shashini H S",
-      designation: "Sr Associate, Operations",
+      designation: "General Manager",
       // facebooklink: "",
       linkedinlink: "https://www.linkedin.com/in/shashini-h-s-513579132/",
       //twitterlink: "mailto:karthik@letsbethechange.in",
@@ -71,7 +71,7 @@ function OurTeam() {
     },
     {
       name: "Rahul Bogase",
-      designation: "Operations and Supply chain management",
+      designation: "Operations Lead and Supply chain management",
       facebooklink: "https://instagram.com/rahul_m_bogase?utm_medium=copy_link",
       linkedinlink: "https://www.linkedin.com/in/rahul-b-m-7982a117b",
       //twitterlink: "mailto:karthik@letsbethechange.in",
