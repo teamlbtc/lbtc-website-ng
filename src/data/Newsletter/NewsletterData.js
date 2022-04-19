@@ -41,4 +41,10 @@ export const NewsItems = [
     newlink:
       "https://drive.google.com/file/d/1ohZAkR1NNzpg44ttqKcMufkbBQyvMwyI/view?usp=sharing",
   },
+  {
+    month: "March",
+    year: "2022",
+    newlink:
+      "https://drive.google.com/file/d/1O9GFnC-WWyIObqjY3u1OW6ATV-jBbsGR/view?usp=sharing",
+  },
 ];
