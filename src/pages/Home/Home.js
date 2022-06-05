@@ -4,7 +4,7 @@ import CurrentProjects from "../../components/HpComponents/CurrentProjects/Curre
 import HeroMain from "../../components/HpComponents/HeroMain/HeroMain";
 import BlogView from "../../components/HpComponents/BlogView/BlogView";
 import { TiyIndia } from "../../components/HpComponents/TIYIndia/TiyIndia";
-import Activities from "../../components/HpComponents/Activities/Activities";
+// import Activities from "../../components/HpComponents/Activities/Activities";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <AboutUs></AboutUs>
       <CurrentProjects></CurrentProjects>
       <TiyIndia></TiyIndia>
-      <Activities></Activities>
+      {/* <Activities></Activities> */}
       <BlogView></BlogView>
     </div>
   );

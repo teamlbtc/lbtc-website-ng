@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/menubar.min.scss";
+import "./css/dropdown.css";
 import { Link } from "react-router-dom";
 
 const MenuWeb = () => {
@@ -64,7 +65,16 @@ const MenuWeb = () => {
               <ul>
                 <li></li>
                 <li class="menu-item-has-children">
-                  <Link to="/about">About</Link>
+                  <div className="dropdown">
+                    <Link className="dropbtn" to="/about">
+                      About
+                    </Link>
+                    <div className="dropdown-content">
+                      <a href="#ourwork">Our Work</a>
+                      <a href="#team">Our Members</a>
+                      <a href="#achievements">Achievements</a>
+                    </div>
+                  </div>
                 </li>
                 <li class="menu-item-has-children">
                   <Link to="/gallery">Gallery</Link>
@@ -81,9 +91,9 @@ const MenuWeb = () => {
                 <li>
                   <Link to="/blog">Blog</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/covid19">Covid-19</Link>
-                </li>
+                </li> */}
               </ul>
               <a
                 class="thm-btn yellowcolor"

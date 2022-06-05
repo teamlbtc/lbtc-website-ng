@@ -63,7 +63,9 @@ const About = () => {
                         overcome waste management issues. ”
                       </p>
                       <br />
-                      <h2 itemprop="headline">Our Achievements </h2>
+                      <h2 itemprop="headline" id="achievements">
+                        Our Achievements{" "}
+                      </h2>
                       <p itemprop="description">
                         <ul>
                           <li>
@@ -144,7 +146,9 @@ const About = () => {
                       </p>
 
                       <br />
-                      <h2 itemprop="headline">Our Current Work </h2>
+                      <h2 itemprop="headline" id="ourwork">
+                        Our Current Work{" "}
+                      </h2>
                       <p itemprop="description">
                         <strong>Bengaluru Veeraru:</strong>
                         <ul>
@@ -335,6 +339,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <span id="team"></span>
       <OurTeam></OurTeam>
       <FaeaturedOnX></FaeaturedOnX>
     </>

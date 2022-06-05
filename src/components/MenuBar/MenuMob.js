@@ -119,7 +119,7 @@ const MenuMob = () => {
           >
             Blog
           </Nav.Link>
-          <Nav.Link
+          {/* <Nav.Link
             //href="https://bengaluruveeraru.org/ourwork/index.html"
             as={Link}
             to="/covid19"
@@ -131,7 +131,7 @@ const MenuMob = () => {
             }}
           >
             Covid-19
-          </Nav.Link>
+          </Nav.Link> */}
           <Nav.Link
             href="https://rzp.io/l/lbtcdonate4needy"
             style={{
