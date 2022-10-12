@@ -77,7 +77,7 @@ export const NewsItems = [
     newlink:
       "https://drive.google.com/file/d/1ihEMaPMK3Z7tkJRkCc1WYqsZcCgmKf2f/view?usp=sharing",
   },
-     {
+  {
     month: "September",
     year: "2022",
     newlink:
